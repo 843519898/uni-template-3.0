@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //font-family: PingFangSC, sans-serif , "Microsoft YaHei";
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-dialog__headerbtn{
+  font-size: 21rpx !important;
+}
+
+.el-dialog__headerbtn .el-dialog__close{
+  color: #333 !important;
+  font-weight: 500;
+}
+.el-dialog__title{
+  font-size: 17rpx !important;
+  font-weight: 600;
+}

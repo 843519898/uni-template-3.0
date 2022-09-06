@@ -1,0 +1,81 @@
+// 数字倒计时
+.u-countdown{
+  .u-countdown-item{
+    border-radius: 50%!important;
+    width: 52rpx;
+    height: 52rpx;
+  }
+}
+// table
+.u-table{
+  border: none!important;
+  .u-th{
+    border: none!important;
+    color: rgba(0, 0, 0, 0.65)!important;
+    font-weight: 400!important;
+    font-size: 24rpx!important;
+    min-height: 80rpx;
+  }
+  .u-td{
+    display: flex;
+    flex-direction: row!important;
+    align-items: center;
+    border: none!important;
+    font-size: 24rpx!important;
+    min-height: 80rpx!important;
+  }
+  u-tr:nth-child(2n + 1){
+    u-td{
+      background-color: #F9F9F9;
+    }
+  }
+}
+
+// 顶部导航拦
+.u-navbar-content-title{
+  display: none!important;
+}
+.u-title{
+  display: none!important;
+}
+
+// raido
+.u-radio{
+  width: 44rpx!important;
+  .u-radio__icon-wrap{
+    width: 44rpx!important;
+    height: 44rpx!important;
+  }
+  .u-radio__icon-wrap--checked{
+    background: url("~@cdn?9559bebabe47") no-repeat;
+    background-size: 100% 100%;
+    border: 1rpx solid #FF7752!important;
+    background-color: #FF7752!important;
+    .u-icon{
+      display: none;
+    }
+  }
+}
+
+.u-cell-item-box{
+  .u-cell{
+    padding-left: 0!important;
+  }
+  .u-cell--required::before{
+    left: -18rpx!important;
+  }
+}
+
+//解决图片闪动问题
+image{
+  will-change: transform
+}
+
+// popup中间弹框取消滚动
+.u-drawer-content {
+  .u-mode-center-box {
+    .uni-scroll-view {
+      overflow: hidden!important;
+    }
+  }
+}

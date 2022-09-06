@@ -1,0 +1,90 @@
+.flex{
+  display: flex;
+}
+
+.flex-inline{
+  display: inline-flex;
+}
+
+.align-items-center{
+  align-items:center;
+
+}
+
+.align-items-start{
+  align-items: flex-start;
+}
+
+.align-items-end{
+  align-items: flex-end;
+}
+
+.align-items-baseline{
+  align-items: baseline;
+}
+
+
+.justify-content-end{
+  justify-content: flex-end;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-start{
+  justify-content: start;
+}
+
+@for $i from 1 through 10{
+  .flex-#{$i}{
+    flex:#{$i};
+  }
+}
+.flex-direction-column{
+  flex-direction:column;
+}
+
+.justify-content-space-between{
+  justify-content: space-between;
+}
+
+.justify-content-around-between{
+  justify-content: space-around;
+}
+
+.flex-flow-row-wrap{
+  flex-flow:row wrap;
+}
+
+.flex-direction{
+  flex-direction: row-reverse;
+}
+
+.flex-direction-row{
+  flex-direction: row;
+}
+
+.align-items-baseline{
+  align-items: baseline;
+}
+
+.flex-shrink {
+  flex-shrink: 0
+}
+
+.grid{
+  display: grid;
+}
+
+@for $i from 1 through 10{
+  .grid-template-columns-#{$i}{
+    grid-template-columns: repeat(#{$i}, 1fr);
+  }
+}
+
+@each $space in 2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 22, 24, 25, 28, 30, 32, 34, 35, 40, 45, 48, 50, 55, 60, 65, 70, 72, 75, 80, 85, 90, 95, 100, 120, 140 {
+  .grid-gap-#{$space} {
+    grid-gap: #{$space}rpx;
+  }
+}

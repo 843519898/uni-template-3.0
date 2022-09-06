@@ -1,0 +1,554 @@
+@import "conf";
+
+.white-space {
+  white-space: nowrap;
+}
+.word-wrap{
+  word-wrap: break-word;
+}
+//.num-font {
+//  //font-family: 'CDSHT-Regular' !important;
+//  font-family: 'cdsht' !important;
+//}
+
+.page-background-FFF{
+  min-height: 100vh;
+  background-color: #FFF;
+}
+
+.page-background-F5F5F5{
+  min-height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-1 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.ellipsis-2 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.ellipsis-3 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.ellipsis-4 {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.nt-border {
+  border-top: none !important;
+}
+
+.nb-border {
+  border-bottom: none !important;
+}
+
+.nl-border {
+  border-left: none !important;
+}
+
+.border-1 {
+  border: 1rpx solid #EFEFEF;
+}
+
+.border-2 {
+  border: 1rpx solid #C0C4CC;
+}
+
+.border-dashed-1{
+  border: 1rpx dashed #C0C4CC;
+
+}
+
+.nr-border {
+  border-right: none !important;
+}
+
+.border-bottom-1 {
+  border-bottom: 1rpx solid #f5f5f5;
+}
+
+.border-bottom-2 {
+  border-bottom: 1rpx solid #EFEFEF;
+}
+
+.border-bottom-3 {
+  border: 1rpx solid #F1F1F1;
+}
+
+.border-bottom-4 {
+  border-bottom: 1rpx solid #EBEBEB;
+}
+
+
+.h100p {
+  height: 100%;
+}
+
+.h22p {
+  line-height: 22rpx;
+
+}
+
+.h95p {
+  height: 95%;
+}
+
+.h5p {
+  height: 5%;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.w50p {
+  width: 50%;
+}
+
+.l0 {
+  left: 0;
+}
+
+.t0 {
+  top: 0;
+}
+
+.full {
+  left: 0;
+  top: 0;
+  @extend .h100p;
+  @extend .w100p;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.in-block {
+  display: inline-block;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-decoration {
+  text-decoration: line-through;
+}
+
+.text-decoration-line-underline {
+  text-decoration: underline;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.no-cursor-pointer {
+  cursor: text;
+}
+
+.vertical-align-m {
+  vertical-align: middle;
+}
+
+.vertical-align-t {
+  vertical-align: top;
+}
+
+.vertical-align-b {
+  vertical-align: bottom;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.link {
+  color: $primary-color;
+}
+
+.link-hover {
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+
+.link-hover-bold {
+  &:hover {
+    color: $primary-color !important;
+    font-weight: 700;
+  }
+}
+
+.link-hover-line {
+  &:hover {
+    text-decoration: underline;
+    color: $primary-color !important;
+  }
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+@each $space in 2, 3, 4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 22, 24, 25, 28, 30, 32, 34, 35, 40, 45, 48, 50, 55, 60, 65, 70, 72, 75, 80, 85, 88, 90, 95, 100, 120, 140 {
+  .ml#{$space} {
+    margin-left: #{$space}rpx;
+  }
+  .mr#{$space} {
+    margin-right: #{$space}rpx;
+  }
+  .mt#{$space} {
+    margin-top: #{$space}rpx;
+  }
+  .mb#{$space} {
+    margin-bottom: #{$space}rpx;
+  }
+  .pl#{$space} {
+    padding-left: #{$space}rpx;
+  }
+  .pr#{$space} {
+    padding-right: #{$space}rpx;
+  }
+  .pt#{$space} {
+    padding-top: #{$space}rpx;
+  }
+  .pb#{$space} {
+    padding-bottom: #{$space}rpx;
+  }
+}
+
+.cp {
+  color: $primary-color;
+}
+
+.bg-f {
+  background-color: #fff;
+}
+
+.bg-FF7 {
+  background-color: #FF7752;
+}
+
+.cfff {
+  color: #fff;
+}
+
+.c68 {
+  color: #686868;
+}
+
+.c8c {
+  color: #8C8C8C;
+}
+
+.ccc {
+  color: #ccc;
+}
+
+.c999 {
+  color: #999;
+}
+
+.c666 {
+  color: #666;
+}
+
+.c333 {
+  color: #333;
+}
+
+.c222 {
+  color: #222;
+}
+
+.c000 {
+  color: #000;
+}
+
+.cbbb {
+  color: #bbb;
+}
+
+.cd2d2d2 {
+  color: #D2D2D2;
+}
+
+.cff7752 {
+  color: #ff7752;
+}
+
+.cff0037 {
+  color: #FF0037;
+}
+
+.c303133 {
+  color: #303133;
+}
+
+.cffc6af{
+  color: #FFC6AF;
+}
+
+.cf03924 {
+  color: #F03924;
+}
+
+
+.fs32 {
+  font-size: 32rpx;
+}
+
+.fs22 {
+  font-size: 22rpx;
+}
+
+.fs20 {
+  font-size: 20rpx;
+}
+
+.fs19 {
+  font-size: 19rpx;
+}
+
+.fs18 {
+  font-size: 18rpx;
+}
+
+.fs17 {
+  font-size: 17rpx;
+}
+
+.fs16 {
+  font-size: 16rpx;
+}
+
+.fs15 {
+  font-size: 15rpx;
+}
+
+.fs14 {
+  font-size: 14rpx;
+}
+
+.fs13 {
+  font-size: 13rpx;
+}
+
+.fs12 {
+  font-size: 12rpx;
+}
+
+.fs11 {
+  font-size: 11rpx;
+}
+
+.fs10 {
+  font-size: 10rpx;
+}
+
+.fs22 {
+  font-size: 22rpx;
+}
+
+.fs24 {
+  font-size: 24rpx;
+}
+
+.fs26 {
+  font-size: 26rpx;
+}
+
+.fs28 {
+  font-size: 28rpx;
+}
+
+.fs30 {
+  font-size: 30rpx;
+}
+
+.fs34 {
+  font-size: 34rpx;
+}
+
+.fs36 {
+  font-size: 36rpx;
+}
+
+.fs46 {
+  font-size: 46rpx;
+}
+
+.fs48 {
+  font-size: 48rpx;
+}
+
+.fs40 {
+  font-size: 40rpx;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z4 {
+  z-index: 4;
+}
+
+.br2 {
+  border-radius: 2rpx;
+}
+
+.br4 {
+  border-radius: 4rpx;
+}
+
+.br6{
+  border-radius: 6rpx;
+}
+
+.br8 {
+  border-radius: 8rpx;
+}
+
+.br12 {
+  border-radius: 12rpx;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.opacity6 {
+  opacity: 0.6;
+}
+
+.opacity7 {
+  opacity: 0.7;
+}
+
+.clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+.lh100p {
+  line-height: 100%;
+}
+
+.lh20 {
+  line-height: 20rpx;
+}
+
+.lh26 {
+  line-height: 26rpx;
+}
